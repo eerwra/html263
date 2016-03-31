@@ -1,15 +1,20 @@
+body {
+    background-color: #ffffe0;
+}
+
 header {
     position: relative;
     top: 0px;
     right: 0px;
     border: 2px solid;
-    border-color: black;
+    border-color: #deb887;
     border-right: none;
     border-left: none;
     height: 60px;
     width: 100%;
     text-align: center;
     font-size: 45px;
+    background-color: #ffebcd;
 }
 
 section {
@@ -17,7 +22,8 @@ section {
     margin-top: 60px;
     width: 850px;
     border: 2px solid;
-    border-color: green;
+    border-color: #c0c0c0;
+    background-color: #f5f5f5;
 }
 
 ul {
@@ -30,7 +36,7 @@ li {
 
 img {
     border: 2px solid;
-    border-color: gray;
+    border-color: #d3d3d3;
     align-content: left;
 }
 
@@ -51,6 +57,7 @@ nav>a {
     text-align: center;
     font-size: 22px;
     float: left;
+    background-color: #f5f5f5;
 }
 
 nav>a:link {
