@@ -58,7 +58,7 @@
         background-color: black;
     }
     
-    @media screen and ( min-width:950px) {
+    @media screen and ( min-width:1000px) {
         .container2 {
             margin: 0 auto;
             margin-top: 30px;
@@ -69,12 +69,12 @@
         }
     }
     
-    @media screen and ( min-width:850px) and ( max-width:950px) {
+    @media screen and ( min-width:950px) and ( max-width:1000px) {
         .container2 {
             margin: 0 auto;
             margin-top: 30px;
             margin-bottom: 30px;
-            width: calc(100%);
+            width: calc(100%*9/10);
             overflow: auto;
             clear: both;
         }
@@ -90,6 +90,8 @@
             clear: both;
         }
     }
+    /* .container2 { border: 2px solid green; }
+*/
     
     img {
         width: auto;
@@ -129,8 +131,10 @@
     }
     
     .footer {
-        background-color: black;
+        //background-color: black;
         height: 50px;
+        margin-bottom: 0px;
+        display: block;
     }
     </style>
 </head>
@@ -143,7 +147,7 @@
                     <li><a href="#" style="color:#EC6952;font-size: 25px;">台灣好風景</a></li>
                 </ul>
                 <ul class="nav navbar-nav pull-right">
-                    <li><a href="#">聯絡我</a></li>
+                    <li><a href="mailto:eerwa@gmail.com">聯絡我</a></li>
                 </ul>
             </div>
         </div>
@@ -174,7 +178,6 @@
             </div>
         </div>
     </div>
-    <div class="footer"></div>
 </body>
 
 </html>
