@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="NTU CSIE Information System Training Course">
+    <meta name="keywords" content="Keyword 1,Keyword 2">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <title>sketch1</title>
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding-top: 70px;
+    }
+    
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        padding: 10px 0px 10px 0px;
+        height: 70px;
+        background-color: white;
+        border: 0px solid #dcdcdc;
+        border-bottom-width: 0.5px;
+    }
+    
+    section {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        border: 0px solid #dcdcdc;
+        border-bottom-width: 0.5px;
+    }
+    
+    .group {
+        width: 1000px;
+        height: 50px;
+        margin: 0 auto;
+        clear: both;
+    }
+    
+    .nav {
+        width: 607px;
+        float: left;
+    }
+    
+    .secondary-nav {
+        width: 1000px;
+        height: 30px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .secondary-nav ol {
+        margin: 0 auto;
+        width: calc(100%*3/12);
+    }
+    
+    ol {
+        height: 50px;
+    }
+    
+    li {
+        display: block;
+        padding: 0px;
+        float: left;
+        color: #207CDF;
+        font-size: 16px;
+        font-family: Aktiv-Grotes, 'Helvetica Nenu', Arial, sans-serif;
+    }
+    
+    a {
+        text-decoration: none; //不要有底線
+        color: #207CDF;
+        display: inline-block;
+    }
+    
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: #207CDF;
+        padding: 5px 15px 5px 15px;
+    }
+    
+    .buy {
+        color: #207CDF;
+        border: 1px solid #207CDF;
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        width: calc(100%*4/12);
+        float: left;
+        overflow: auto;
+        clear: both;
+        height: 50px;
+    }
+    
+    img {
+        width: auto;
+        height: auto;
+        max-height: calc(100%);
+        max-width: calc(100%);
+        display: block;
+    }
+    
+    aside {}
+    
+    aside li {
+        display: block;
+        margin: 5px;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="main_nav">
+        <div class="group">
+            <div class="logo">
+                <img src="HW3_1_assets/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ol>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Extensions</a></li>
+                    <li><a href="">Learn</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="" class="buy">Buy Now</a></li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="secondary-nav">
+            <ol>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Documentation</a></li>
+            </ol>
+        </div>
+    </section>
+    <div class="container">
+        <aside>
+            <h1>Contents</h1>
+            <ol>
+                <li>Video Tutorials</li>
+                <li>Courses</li>
+                <li>Articles</li>
+                <li>Downloads</li>
+            </ol>
+        </aside>
+    </div>
+</body>
+
+</html>
