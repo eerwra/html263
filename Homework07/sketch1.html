@@ -11,6 +11,7 @@
     <meta name="description" content="description">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="icon" type="image/png" href="./HW3_1_assets/ruby.png">
     <title>sketch1</title>
     <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
     <style>
@@ -19,7 +20,7 @@
     }
     
     body {
-        padding-top: 70px;
+        padding-top: 80px;
     }
     
     header {
@@ -27,8 +28,8 @@
         top: 0px;
         width: 100%;
         padding: 0px 0px 0px 0px;
-        padding: 10px 0px 10px 0px;
-        height: 70px;
+        padding: 5px 0px 10px 0px;
+        height: 80px;
         background-color: white;
         border: 0px solid #dcdcdc;
         border-bottom-width: 0.5px;
@@ -37,25 +38,26 @@
     section {
         width: 100%;
         height: 50px;
-        background-color: white;
+        background-color: #f8f8ff;
         border: 0px solid #dcdcdc;
         border-bottom-width: 0.5px;
     }
     
     .group {
-        width: 1000px;
-        height: 50px;
+        width: calc(100%*10/12);
+        padding-left: 0px;
+        height: 70px;
         margin: 0 auto;
-        clear: both;
     }
     
     .nav {
-        width: 607px;
-        float: left;
+        padding: 15px 0px 15px 0px;
+        width: 600px;
+        float: right;
     }
     
     .secondary-nav {
-        width: 1000px;
+        width: 100%;
         height: 30px;
         margin: 0 auto;
         padding: 10px;
@@ -63,20 +65,24 @@
     
     .secondary-nav ol {
         margin: 0 auto;
-        width: calc(100%*3/12);
+        width: 300px;
     }
     
     ol {
-        height: 50px;
+        width: 600px;
+        height: 70px;
+        //border: 1px solid red;
     }
     
     li {
         display: block;
         padding: 0px;
         float: left;
+        height: 40px;
         color: #207CDF;
-        font-size: 16px;
+        font-size: 17px;
         font-family: Aktiv-Grotes, 'Helvetica Nenu', Arial, sans-serif;
+        //border: 1px solid orange;
     }
     
     a {
@@ -90,41 +96,54 @@
     a:hover,
     a:active {
         color: #207CDF;
-        padding: 5px 15px 5px 15px;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
     }
     
-    .buy {
+    a.button:link,
+    a.button:visited {
         color: #207CDF;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
         border: 1px solid #207CDF;
-        border-radius: 2px;
-        margin: 0 auto;
+        border-radius: 5px;
     }
     
     .logo {
-        width: calc(100%*4/12);
+        width: 130px;
         float: left;
         overflow: auto;
         clear: both;
+        margin-top: 10px;
         height: 50px;
     }
-    
-    img {
+    /*img {
         width: auto;
         height: auto;
         max-height: calc(100%);
         max-width: calc(100%);
         display: block;
+    }*/
+    
+    img {
+        width: 100%;
+        height: auto;
     }
     
     aside {
-        padding: 50px 10px 0px 10px;
-        width: 500px;
+        padding: 50px 0px 0px 0px;
+        width: 200px;
         float: left;
+        border: 1px dotted lightblue;
     }
     
     aside li {
         display: block;
-        margin: 8px 10px 8px 10px;
+        padding: 10px 15px;
         width: 100%;
     }
     
@@ -132,6 +151,182 @@
         font-size: 24px;
         font-family: Aktiv-Grotes, 'Helvetica Nenu', Arial, sans-serif;
         margin: 10px;
+    }
+    
+    .header-learn {
+        padding-top: 50px;
+    }
+    
+    .header-learn h1 {
+        font-size: 45px;
+        font-family: 'Aktiv-Grotes', '微軟正黑體', 'Helvetica Nenu', Arial, sans-serif;
+    }
+    
+    p {
+        padding-top: 25px;
+        font-size: 20px;
+        font-family: 'Aktiv-Grotes', '微軟正黑體', 'Helvetica Nenu', Arial, sans-serif;
+    }
+    
+    .header-featured {
+        display: block;
+        clear: both;
+    }
+    
+    .header-featured h2 {
+        padding-top: 70px;
+        font-size: 35px;
+        font-family: 'Aktiv-Grotes', '微軟正黑體', 'Helvetica Nenu', Arial, sans-serif;
+    }
+    
+    .main-contain {
+        width: calc(100%*9/12);
+        float: right;
+        padding-bottom: 50px;
+    }
+    
+    .videoItem {
+        margin-top: 30px;
+        display: inline-block;
+        width: calc(100%/3);
+        height: 330px;
+        float: left;
+        //border: 2px dashed lightblue;
+    }
+    
+    .videoItem a {
+        border: 1px solid #d3d3d3;
+        margin: 10px;
+        padding: 0px;
+        height: 320px;
+    }
+    
+    .videoItem a:hover {
+        box-shadow: 1px 2px 20px #dcdcdc, -1px 2px 20px #dcdcdc;
+    }
+    
+    .card-title {
+        font-size: 18px;
+        color: black;
+        text-align: left;
+        padding: 5px 10px 5px 10px;
+    }
+    
+    li.videoItem small {
+        display: block;
+        font-size: 15px;
+        color: #a9a9a9;
+        padding: 5px 0px 5px 0px;
+    }
+    
+    .card-description {
+        display: block;
+        font-size: 18px;
+        color: #a9a9a9;
+        text-align: left;
+        padding: 15px 10px 10px 10px;
+    }
+    
+    .articles .videoItem {
+        margin-top: 30px;
+        display: inline-block;
+        width: calc(100%/3);
+        height: 165px;
+        float: left;
+        //border: 2px dashed lightblue;
+    }
+    
+    .articles .videoItem a {
+        border: 1px solid #d3d3d3;
+        margin: 10px;
+        padding: 15px;
+        height: 165px;
+    }
+    
+    section.buy {
+        clear: both;
+        height: 100%;
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    
+    section.buy>.group {
+        height: 100%;
+        clear: both;
+    }
+    
+    .app-icon {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        width: calc(100%*1.5/12);
+        /*border: 1px solid black;*/
+        padding: 20px;
+        height: 100%;
+    }
+    
+    .offer-desp {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100%*8/12);
+        text-align: left;
+        margin: 0px;
+        /*border: 1px solid black;*/
+        padding: 20px;
+        height: 100%;
+        font-family: 'Aktiv-Grotes', '微軟正黑體', 'Helvetica Nenu', Arial, sans-serif;
+    }
+    
+    .buy-block {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        width: calc(100%*2/12);
+        /*border: 1px solid black;*/
+        padding: 20px;
+        height: 100%;
+    }
+    
+    a.full:link,
+    a.full:visited {
+        background-color: #207CDF;
+        color: white;
+        /*color: #207CDF;*/
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid #207CDF;
+        border-radius: 5px;
+    }
+    
+    footer {
+        height: 100px;
+    }
+    
+    footer>.group {
+        height: 100%;
+    }
+    
+    footer>.group>nav {
+        height: 100%;
+    }
+    
+    footer>.group>nav>small {
+        font-size: 20px;
+        color: #808080;
+        float: left;
+        height: 100%;
+        text-align: center;
+        line-height: 90px;
+        font-family: 'Aktiv-Grotes', '微軟正黑體', 'Helvetica Nenu', Arial, sans-serif;
+    }
+    
+    footer>.group>nav>ul {
+        float: right;
+        height: 100%;
+        text-align: center;
+        line-height: 90px;
     }
     </style>
 </head>
@@ -149,7 +344,7 @@
                     <li><a href="">Learn</a></li>
                     <li><a href="">Community</a></li>
                     <li><a href="">Support</a></li>
-                    <li><a href="" class="buy">Buy Now</a></li>
+                    <li><a href="" class="button">Buy Now</a></li>
                 </ol>
             </div>
         </div>
@@ -163,23 +358,221 @@
         </div>
     </section>
     <div class="container">
-        <aside>
-            <h1>Contents</h1>
-            <ol>
-                <li>Video Tutorials</li>
-                <li>Courses</li>
-                <li>Articles</li>
-                <li>Downloads</li>
-            </ol>
-        </aside>
-        <div class="main-contain"
->
-            <div class="header-learn">
-                <h1>Learn Sketch</h1>
-                <p>Sketch is easy to use, and quick to learn. We’ve created some short videos, and compiled invaluable resources to help you get started!</p>
+        <div class="group">
+            <aside>
+                <h1>Contents</h1>
+                <ol>
+                    <li>Video Tutorials</li>
+                    <li>Courses</li>
+                    <li>Articles</li>
+                    <li>Downloads</li>
+                </ol>
+            </aside>
+            <div class="main-contain">
+                <div class="header-learn">
+                    <h1>Learn Sketch</h1>
+                    <p>Sketch is easy to use, and quick to learn. We’ve created some short videos, and compiled invaluable resources to help you get started!</p>
+                </div>
+                <div class="header-featured">
+                    <h2>Video Tutorials</h2>
+                    <ul>
+                        <li class="videoItem">
+                            <a href="https://www.youtube.com/embed/3fcIp5OXtVE?autoplay=1&autohide=1&showinfo=0&rel=0" rel="shadowbox;width=1280;height=720" class="card">
+                                <img src="./HW3_1_assets/symbol.png" alt="Pixel Precise Editing">
+                                <h3 class="card-title">Introducing Symbols <small>Duration 5:22</small></h3>
+                                <p class="card-description">Symbols, allow you to re-use elements throughout your design.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://www.youtube.com/embed/OV1SSOEKxm0?autoplay=1&autohide=1&showinfo=0&rel=0" rel="shadowbox;width=1280;height=720" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/px.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/px.png">
+                                    <img src="./HW3_1_assets/px.png" alt="Pixel Precise Editing">
+                                </picture>
+                                <h3 class="card-title">Pixel Precise Editing <small>Duration 4:11</small></h3>
+                                <p class="card-description">An in depth tutorial about the tools Sketch provides you to create pixel perfect designs.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://www.youtube.com/embed/1SHTd1jfah8?autoplay=1&autohide=1&showinfo=0&rel=0" rel="shadowbox;width=1280;height=720" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/boolean.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/boolean.png">
+                                    <img src="./HW3_1_assets/boolean.png" alt="Boolean Operations">
+                                </picture>
+                                <h3 class="card-title">Boolean Operations <small>Duration 1:54</small></h3>
+                                <p class="card-description">Here’s a simple way to create complex shapes with this powerful feature.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://www.youtube.com/embed/Dpk1XYlFzOs?autoplay=1&autohide=1&showinfo=0&rel=0" rel="shadowbox;width=1280;height=720" class="card">
+                                <picture>
+                                    <source srcset="HW3_1_assets/asset.png" media="(max-width: 767px)">
+                                    <source srcset="HW3_1_assets/asset.png">
+                                    <img src="HW3_1_assets/asset.png" alt="Exporting">
+                                </picture>
+                                <h3 class="card-title">Exporting Assets <small>Duration: 2:13</small></h3>
+                                <p class="card-description">Our top tips when it comes to exporting your artwork.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://www.youtube.com/embed/4_1mcizltcM?autoplay=1&autohide=1&showinfo=0&rel=0" rel="shadowbox;width=1280;height=720" class="card">
+                                <picture>
+                                    <source srcset="HW3_1_assets/basic.png" media="(max-width: 767px)">
+                                    <source srcset="HW3_1_assets/basic.png">
+                                    <img src="HW3_1_assets/basic.png" alt="Masks">
+                                </picture>
+                                <h3 class="card-title">Using Masks <small>Duration: 1:44</small></h3>
+                                <p class="card-description">We take a look at Masks in Sketch, using both Outline and Alpha masks.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-featured">
+                    <h2>Courses</h2>
+                    <ul>
+                        <li class="videoItem">
+                            <a href="https://teamtreehouse.com/library/sketch-basics" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/basic.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/basic.png">
+                                    <img src="./HW3_1_assets/basic.png" alt="Treehouse">
+                                </picture>
+                                <h3 class="card-title">Sketch Basics <small><i>by</i> Chris Downer & Treehouse</small></h3>
+                                <p class="card-description">We’ve worked with Treehouse to bring you a course to learn Sketch.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://designcode.io/sketch" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/dc.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/dc.png">
+                                    <img src="./HW3_1_assets/dc.png" alt="Design+Code">
+                                </picture>
+                                <h3 class="card-title">Design+Code <small><i>by</i> Meng To</small></h3>
+                                <p class="card-description">Learn Sketch, iOS 9, and with Xcode 7 using Swift by building a news reader app.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="http://leveluptuts.com/tutorials/sketch-3-tutorials" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/tutorial.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/tutorial.png">
+                                    <img src="./HW3_1_assets/tutorial.png" alt="Level Up Tutorials">
+                                </picture>
+                                <h3 class="card-title">Sketch 3 Tutorials <small><i>by</i> Level Up Tutorials</small></h3>
+                                <p class="card-description">Get to grips with Sketch and its features, with these free tutorials.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="http://learnsketch.com" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/learn.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/learn.png">
+                                    <img src="./HW3_1_assets/learn.png" alt="Learn Sketch">
+                                </picture>
+                                <h3 class="card-title">Learn Sketch <small><i>by</i> Joseph Angelo Todaro</small></h3>
+                                <p class="card-description">A great site with an ever-growing library of tutorials and resources.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="http://www.peachpit.com/store/creating-graphics-with-sketch-learn-by-video-9780133992939" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/peachpit.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/peachpit.png">
+                                    <img src="./HW3_1_assets/peachpit.png" alt="Peachpit">
+                                </picture>
+                                <h3 class="card-title">Creating Graphics with Sketch <small><i>by</i> Amar Sagoo</small></h3>
+                                <p class="card-description">This class is a comprehensive beginner’s guide to Sketch.</p>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://www.udemy.com/learn-sketch-design/?couponCode=SKETCH" class="card">
+                                <picture>
+                                    <source srcset="./HW3_1_assets/udemy.png" media="(max-width: 767px)">
+                                    <source srcset="./HW3_1_assets/udemy.png">
+                                    <img src="./HW3_1_assets/udemy.png" alt="Udemy">
+                                </picture>
+                                <h3 class="card-title">Design for Mobile and Web <small><i>by</i> Adrià Jiménez</small></h3>
+                                <p class="card-description">A step-by-step guide to learn all about Sketch.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-featured">
+                    <h2>Articles</h2>
+                    <ul class="articles">
+                        <li class="videoItem">
+                            <a href="https://medium.com/sketch-app/mastering-the-bezier-curve-in-sketch-4da8fdf0dbbb" class="card">
+                                <h3 class="card-title">Mastering Bézier Curves <small><i>by</i> Peter Nowell</small></h3>
+                                <q class="card-description">Break through the confusion and start making beautifully curved vector shapes.</q>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="https://medium.com/sketch-app/organizing-sketch-3-for-ios-ebb97cae58b7" class="card">
+                                <h3 class="card-title">Organising Sketch for iOS <small><i>by</i> Timur Nurutdinov</small></h3>
+                                <q class="card-description">Updated Sketch 3 workflow for iOS development.</q>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="http://mobileblog.invisionapp.com/11-tips-for-prototyping-with-sketch/" class="card">
+                                <h3 class="card-title">Prototyping with Sketch <small><i>by</i> Andy Orsow</small></h3>
+                                <q class="card-description">Tips for using Sketch to prototype that should make things smoother, faster, and easier.</q>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="http://webdesign.tutsplus.com/tutorials/understanding-sketchs-export-options--cms-22207" class="card">
+                                <h3 class="card-title">Understanding Export <small><i>by</i> Armando Sotoca</small></h3>
+                                <q class="card-description">I’m convinced you’re going to improve your workflow by reading this article.</q>
+                            </a>
+                        </li>
+                        <li class="videoItem">
+                            <a href="http://www.newmediacampaigns.com/blog/essential-sketch-plugins-for-web-design" class="card">
+                                <h3 class="card-title">Work Faster with Plugins <small><i>by</i> Nathan Huening</small></h3>
+                                <q class="card-description">The right plugin will save you a ton of time.</q>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <section class="buy">
+        <div class="group">
+            <div class="app-icon">
+                <picture>
+                    <img itemprop="logo" class="max" src="HW3_1_assets/app-icon.png" alt="App icon" srcset="HW3_1_assets/app-icon.png" width="128" height="122">
+                </picture>
+            </div>
+            <div class="offer-desp">
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <h1 class="h2"><span itemprop="name">Sketch</span></h1>
+                    <p>Available exclusively on the Mac for just <span itemprop="price">$129</span>.</p>
+                </div>
+            </div>
+            <div class="buy-block">
+                <a href="/store/" class="button full">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="group">
+            <nav>
+                <small>&copy; Bohemian Coding</small>
+                <ul role="navigation">
+                    <li><a href="/whats-new/">Updates</a></li>
+                    <li><a href="/about-us/">About us</a></li>
+                    <li><a href="/jobs/">Jobs</a></li>
+                    <li><a href="http://blog.sketchapp.com/">Blog</a></li>
+                    <li><a href="/press/">Press</a></li>
+                    <li><a href="https://twitter.com/sketchapp">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/Sketchapp">Facebook</a></li>
+                    <li><a href="http://developer.sketchapp.com">Developer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
